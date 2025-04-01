@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://cloud.info.freesbe.co.il/FreesbeFonts");
+
+:root {
+  font-family: Rubik, Tahoma, Arial, Helvetica, sans-serif;
+
+  line-height: 1.5;
+  font-weight: 400;
+  --main-color: #00d6d1;
+  --main-txt: #0f0f0f;
+  --secondary-color: #c1ebea;
+  --bg_error: #e9f8f7;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: var(--main-txt);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--main-color);
+}
+
+body {
+  min-height: 100vh;
+  text-align: right;
+  background-color: #fff;
+}
+textarea,
+option,
+input {
+  font-family: inherit;
+  text-align: right;
+  border-radius: 0.3125rem;
+}
+
+input {
+  border: 1px solid #9e9d9d;
+}
+
+select {
+  text-align-last: right;
+  font-family: inherit;
+
+  outline: 1px solid #9e9d9d;
+  border: none;
+  border-radius: 0.3125rem;
+}
+
+textarea:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  border: 1px solid var(--main-color);
+  outline: none;
+}
+
+textarea:focus,
+input:focus,
+select:focus {
+  border: 1px solid var(--main-color);
+  outline: none;
+}
+
+option {
+  direction: rtl;
+}
+option:checked {
+  background-color: var(--secondary-color);
+  font-weight: bold;
+}
+option:hover {
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+}
+
+.iconButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.icon {
+  fill: var(--main-txt);
+  font-size: 16px;
+}
+.iconButton:hover .icon {
+  fill: var(--main-color);
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #333333;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
