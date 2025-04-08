@@ -39,18 +39,18 @@ custom-activity-template/
 │   ├── composables/        # Reusable Vue composables
 │   ├── data/               # Static data files
 │   ├── stores/             # Pinia state management
-│   ├── style.css          # Global styles
-│   ├── main.js            # Entry point for the Vue app
-│   ├── router.js          # Vue Router configuration
-│   ├── App.vue            # Root Vue component
+│   ├── style.css           # Global styles
+│   ├── main.js             # Entry point for the Vue app
+│   ├── router.js           # Vue Router configuration
+│   ├── App.vue             # Root Vue component
 ├── routes/                 # Backend API routes
 ├── lib/                    # Utility libraries (e.g., logger, SFMC integration)
 ├── .env                    # Environment variables
-├── app.js                 # Express server entry point
-├── vite.config.mjs        # Vite configuration
-├── ecosystem.config.js    # PM2 configuration
-├── package.json           # Project dependencies and scripts
-└── README.md              # Project documentation
+├── app.js                  # Express server entry point
+├── vite.config.mjs         # Vite configuration
+├── ecosystem.config.js     # PM2 configuration
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
 ```
 
 ## Setup and Installation
