@@ -50,7 +50,7 @@ custom-activity-template/
 ├── vite.config.mjs         # Vite configuration
 ├── ecosystem.config.js     # PM2 configuration
 ├── package.json            # Project dependencies and scripts
-└── README.md               # Project documentation
+└── README.md              # Project documentation
 ```
 
 ## Setup and Installation
@@ -106,6 +106,30 @@ FREESBE_URL=<Freesbe API URL>
 FREESBE_USERNAME=<Freesbe Username>
 FREESBE_PASSWORD=<Freesbe Password>
 ```
+
+## Create and Install Packages:
+
+In Marketing Cloud, go to _Setup | Apps | Installed Packages_:
+
+1. Click New.
+2. Give the package a name and description.
+3. Click Save.
+
+## API Integration > Server-to-Server
+
+Adding a server-to-server component allows our server to interact with Marketing Cloud i.e. validate a journey activity and upsert records to a data extension.
+
+1. Under Components, click Add Component.
+2. Select API Integration.
+3. Click Next.
+4. Select Server-to-Server.
+5. Click Next.
+6. Set the properties for the integration, including scopes.
+   - Automation > Journeys: _Read_
+   - Data > Data Extensions: _Write_
+7. Click Save.
+
+> the Save values for `SFMC_SECRET`, `SFMC_CLIENT`, `SFMC_TENANT` values to the env file. this information is key for the app integration with SFMC
 
 ## Scripts
 
